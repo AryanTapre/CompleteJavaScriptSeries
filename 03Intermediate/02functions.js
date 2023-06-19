@@ -1,27 +1,29 @@
-// role based function for
-// admin,subadmin,user,testprep,other
+/*
+ Define a function that can answer Role of user
+ admin- with all access
+ subadmin-with access to create/delete courses
+ testprep-with access to create/delete tests
+ user-consume all content
+ other-trial user 
 
-// we can declare function,inside a variable.
+ Input: getUserRole(name,role);
+ */
+
 var getUserRole = function(name,role) {
-
-    switch (role) {
+    switch(role) {
         case "admin":
-            return `${name} is admin`;
-           
+            return `${name} is with all access`;
         case "subadmin":
-            return `${name} is sub admin`;
-            
-        case "user":
-            return `${name} is user`;
-           
+            return `${name} is with access to create/delete courses`;
         case "testprep":
-            return `${name} is test prep`;
-          
-        default:
-            return `no access for ${name}`;
-            break;
+            return `${name} is with access to create/delete tests `;
+        case "user":
+            retunr `${name} will consume all content`;
+        default :
+            return `${name} is the TRIAL user`;
     }
 }
 
-var getRole = getUserRole("aryan","subadmin");
-console.log(getRole);
+var role = getUserRole("aryan",);
+console.log(role);
+

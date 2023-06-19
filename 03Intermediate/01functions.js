@@ -1,14 +1,12 @@
 function sayHello(name) {
-    console.log(`hello ${name},how are you?`);
+    console.log(`hello there, ${name}`);
 }
 
+sayHello("Aryan");
 
-sayHello("aryan");
-
-function namstey() {
-    return "hello from India";
+function namestey() {
+    return "Greeting From INDIA";    
 }
 
-var greetings = namstey();
-console.log(greetings);
+console.log(namestey());
 
